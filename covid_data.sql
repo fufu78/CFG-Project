@@ -3,7 +3,7 @@ USE cfg_project;
 
 # Weekly overall COVID-19 ICU/HDU admission rates per 100,000 people, from week ending 3 February to 19 March 2023.
 CREATE TABLE covid_icu_hdu_2023 (
-location_code INT PRIMARY KEY,
+location_code INT,
 icu_hdu_rate_per_100000_05_feb FLOAT,
 icu_hdu_rate_per_100000_12_feb FLOAT,
 icu_hdu_rate_per_100000_19_feb FLOAT,
@@ -12,6 +12,10 @@ icu_hdu_rate_per_100000_05_mar FLOAT,
 icu_hdu_rate_per_100000_12_mar FLOAT,
 icu_hdu_rate_per_100000_19_mar FLOAT
 );
+
+ALTER TABLE covid_icu_hdu_2023
+ADD CONSTRAINT fk2_location_code
+FOREIGN KEY (location_code) REFERENCES locations (location_code);
 
 INSERT INTO covid_icu_hdu_2023 (location_code, icu_hdu_rate_per_100000_05_feb, icu_hdu_rate_per_100000_12_feb, icu_hdu_rate_per_100000_19_feb,
 icu_hdu_rate_per_100000_26_feb, icu_hdu_rate_per_100000_05_mar, icu_hdu_rate_per_100000_12_mar, icu_hdu_rate_per_100000_19_mar) VALUES 
@@ -44,7 +48,7 @@ icu_hdu_rate_per_100000_26_feb, icu_hdu_rate_per_100000_05_mar, icu_hdu_rate_per
 
 # Number of registered deaths involving COVID-19, from week ending 3 February to 19 March 2023.
 CREATE TABLE covid_deaths_2023 (
-location_code INT PRIMARY KEY,
+location_code INT,
 deaths_05_feb INT,
 deaths_12_feb INT,
 deaths_19_feb INT,
@@ -53,6 +57,10 @@ deaths_05_mar INT,
 deaths_12_mar INT,
 deaths_19_mar INT
 );
+
+ALTER TABLE covid_deaths_2023
+ADD CONSTRAINT fk3_location_code
+FOREIGN KEY (location_code) REFERENCES locations (location_code);
 
 INSERT INTO covid_deaths_2023 (location_code, deaths_05_feb, deaths_12_feb, deaths_19_feb, deaths_26_feb, deaths_05_mar, deaths_12_mar, deaths_19_mar) 
 VALUES (1,17,18,32,27,35,35,27);
@@ -76,10 +84,14 @@ VALUES (9,30,39,36,22,65,41,55);
 
 # Total number of deaths caused by COVID so far (8th May 2023). Includes deaths with COVID on the death certificate, and deaths within 28 days of positive test.
 CREATE TABLE covid_total_deaths (
-location_code INT PRIMARY KEY,
+location_code INT,
 covid_deaths_certified INT,
 covid_deaths_positive_test INT
 );
+
+ALTER TABLE covid_total_deaths
+ADD CONSTRAINT fk4_location_code
+FOREIGN KEY (location_code) REFERENCES locations (location_code);
 
 INSERT INTO covid_total_deaths (location_code, covid_deaths_certified, covid_deaths_positive_test) VALUES (1, 10247, 382.2);
 INSERT INTO covid_total_deaths (location_code, covid_deaths_certified, covid_deaths_positive_test) VALUES (2,28630,388.6);
