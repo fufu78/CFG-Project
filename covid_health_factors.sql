@@ -1,6 +1,7 @@
 USE cfg_project;
 
 SELECT f.MCS_ID as personID, 
+l.location_code as region_code,
 l.location_name as region, 
 h.longstanding_illness, 
 h.migraine, 
