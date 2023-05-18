@@ -27,5 +27,16 @@ VALUES
 (8, 'Swindon', 62, 60, 50, 57.3),
 (8, 'Brigton', 67, 69, 82, 72.7);
 
+# NE NW YH
+INSERT INTO air_quality
+VALUES
+(location_code, area, 09_00, 12_00, 21_00, Avg),
+(1, 'Newcastle', 33, 29,39, 33.7),
+(1, 'Durham', 33, 29, 51, 37.7),
+(2, 'Carlisle',40, 42, 27, 36.3),
+(2, 'Manchester', 28, 29, 23, 26.7),
+(3, 'Sheffield', 25, 28, 65, 39.3),
+(3, 'York', 26, 29, 36, 30.3);
+
 select *
 From air_quality;
