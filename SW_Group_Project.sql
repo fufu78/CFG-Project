@@ -13,7 +13,7 @@ FROM locations;
 
 DATE: 21-05-2023
 Air Quality (AQ) for each day as the values flactuated significantly - 
-average of the sum of each hour 00:00 - 23:00 (n=23)
+average of the sum of each hour 00:00 - 23:00 (n=24)
 
 (4, 'Nottingham', 49),
 (4, 'Leicester', 44),
