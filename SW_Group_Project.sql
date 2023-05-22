@@ -67,4 +67,3 @@ WHERE
 	location_code IS NOT NULL;
 
 
-
