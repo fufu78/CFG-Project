@@ -1,4 +1,4 @@
-﻿AQI Range Colours;Concern Levels;Index Value (Minimum);Index Value (Maximum)
+﻿AQI_Range_Colours;Concern_Levels;Index_Value_Minimum;Index_Value_Maximum
 Green;Good;0;50
 Yellow;Moderate;51;100
 Orange;Unhealthy for Sensitive Groups;101;150
