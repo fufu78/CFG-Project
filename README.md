@@ -28,7 +28,7 @@ The results highlight the potential health and environmental risk factors for CO
 Poorer air quality is strongly correlated with increased ICU/HDU admissions (r=0.85) and weakly correlated with the number of deaths (r=0.12). Factors such as e-cigarette and vape usage are strongly correlated with COVID deaths (r=0.9), as is hay fever (r=0.8), whereas cancer has the lowest correlation coefficient at r=0.3. 
 Although the high correlation with hay fever was a surprise, it can be explained by how common the condition is. As there is a strong correlation between poor air quality and ICU/HDU, this indicates that future intervention with COVID should involve consideration to areas with poorer air quality.
 
-## Getting Started
+## Installation and Useage
 1. Clone this repo (for help see this [tutorial](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)).
 2. Raw data is being kept [here](https://github.com/fufu78/CFG-Project/tree/data-analysis-CSV-files) within this repo. 
 3. Data processing/transformation scripts are being kept [here](https://github.com/fufu78/CFG-Project/tree/data-analysis-results)
