@@ -5,6 +5,7 @@
 ![pandas Badge](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=fff&style=flat)
 ![Jupyter Badge](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=fff&style=flat)
 ![NumPy Badge](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=fff&style=flat)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-013243?logo=Matplotlib&logoColor=fff&style=flat)
 
 ## Objective
 
