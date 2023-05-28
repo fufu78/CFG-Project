@@ -38,5 +38,16 @@ VALUES
 (3, 'Sheffield', 25, 28, 65, 39.3),
 (3, 'York', 26, 29, 36, 30.3);
 
+# EM, WM, EE
+INSERT INTO air_quality
+VALUES
+(location_code, area, 09_00, 12_00, 21_00, Avg),
+(4, 'Nottingham', 49),
+(4, 'Leicester', 44),
+(5, 'Birmingham', 39),
+(5, 'Stafford', 39),
+(6, 'Luton', 49),
+(6, 'Norwich', 38),
+
 select *
 From air_quality;
