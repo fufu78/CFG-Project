@@ -32,18 +32,21 @@ Although the high correlation with hay fever was a surprise, it can be explained
 2. Raw data is being kept [here](https://github.com/fufu78/CFG-Project/tree/data-analysis-CSV-files) within this repo. 
 3. Data processing/transformation scripts are being kept [here](https://github.com/fufu78/CFG-Project/tree/data-analysis-results)
 
-|Branch    |  Instructions  | 
+### Overview of Repository
+|**Branch**    |  **Instructions**  | 
 |---------|-----------------|
-|data-analysis-CSV | There are five CSV files that store project data: <ul><li>Air_quality_data (average AQI data per city)</li><li> Covid_deaths_2023 (total number of covid deaths per week per region)</li><li>Covid_icu_2023 (number of ICU/HDU admissions per 100,000 people per region)</li><li>AQI_categories (classifications of air quality index)</li><li>all_COVID_data (health factors, general health ratings)</li>|
-| data-analysis-results | <li>For analysis on air quality and covid-related deaths/ICU admissions, please use the notebook air_quality_&_covid-rebecca.ipynb that uses the CSV files Covid_deaths_2023, Covid_icu_23 and Air_quality_data.</li>
+|**data-analysis-CSV** | There are five CSV files that store project data: <ul><li>`Air_quality_data` (average AQI data per city)</li><li> `Covid_deaths_2023` (total number of covid deaths per week per region)</li><li>`Covid_icu_2023` (number of ICU/HDU admissions per 100,000 people per region)</li><li>`AQI_categories` (classifications of air quality index)</li><li>`all_COVID_data` (health factors, general health ratings)</li>|
+| **data-analysis-results** | <li>For analysis on health factors and covid-related deaths/ICU admissions, please use the notebook `health_factors.ipynb` that uses the CSV files `Covid_deaths_2023`, `Covid_icu_23` and `all_covid_data`.</li><li>For analysis on air quality, please use the notebook `Air_quality_aqi_sabina.ipynb`  that uses the `AQI_catagories` and `Air_quality_data`.</li><li>For analysis on air quality and covid-related deaths/ICU admissions, please use the notebook `air_quality_&_covid-rebecca.ipynb` that uses the CSV files `Covid_deaths_2023`, `Covid_icu_23` and `Air_quality_data`.</li><li>For analysis on health related factors and air quality, please use the notebook `Air_quality_&_health_factors-emma.ipynb` that uses the CSV files `all_covid data` and `Air_quality data`.</li>
+| **API** | <li>Files in the `Requests` folder were used to obtain the current regional air quality data</li><li>`Air_quality_table_data.sql` were used to insert these values into the `Air_quality_data`</li>|
+|**mysql-database**| This branch contains the raw data and SQL database. Please see `README.md` for an entity relationship diagram of the SQL database.|
 
-## Credits
+## Contributors
 
 |Name     |  GitHub   | 
 |---------|-----------------|
 |Emer Buggy| https://github.com/fufu78 |
+|Emma Horton|https://github.com/emma773 |
 |Maariya Rachid Daud| https://github.com/maariya-daud |
 |Punam Rattu|https://github.com/punamrattu |
-|Sabina Wellington| https://github.com/sabs-codes|
 |Rebecca W|https://github.com/weebesom |
-|Emma Horton|https://github.com/emma773 |
+|Sabina Wellington| https://github.com/sabs-codes|
