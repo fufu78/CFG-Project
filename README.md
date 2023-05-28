@@ -1,69 +1,49 @@
-# <Your-Project-Title>
+## Title: Exploring the impact of air quality and health-related factors on COVID-19 outcomes in England
 
-## Description
+![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat)
+![MySQL Badge](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff&style=flat)
+![pandas Badge](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=fff&style=flat)
+![Jupyter Badge](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=fff&style=flat)
+![NumPy Badge](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=fff&style=flat)
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+## Objective
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project aims to investigate the potential relationship between COVID-19 outcomes, air pollution, and health-related factors. The key questions that the project will address are:
+- Do regional air quality measures play a role in COVID-19 outcomes e.g. severity or death?
+- Are any health-related factors associated with an increase in COVID-19 cases or COVID-19 severity?
+- If yes, can any of these health-related factors be attributed to air quality?
 
-## Table of Contents (Optional)
+## Project Description
+**Motivation:**
+The impact of the COVID-19 pandemic has been significant and far-reaching and remains prevalent to this day. Therefore, a better understanding of factors that contribute to disease severity, such as air quality and health-related factors, can inform interventions aiming to improve COVID-19 outcomes. 
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+**Why this project?:**
+Air quality is an indicator of air pollution, which has been linked to various respiratory and cardiovascular health issues. As COVID-19 is primarily a respiratory disease, exploring its potential association with air quality can provide insights into the interplay between environmental factors and disease severity.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+**What problem did it solve?:**
+The results highlight the potential health and environmental risk factors for COVID-19. There is potential application for awareness of the impact that air pollution has on COVID virus severity. The results could provide evidenced based interventions in the event of future outbreaks, or evidence for the need for future research into other respiratory diseases and the link to air quality.
 
-## Installation
+**What did we learn?:**
+Poorer air quality is strongly correlated with increased ICU/HDU admissions (r=0.85) and weakly correlated with the number of deaths (r=0.12). Factors such as e-cigarette and vape usage are strongly correlated with COVID deaths (r=0.9), as is hay fever (r=0.8), whereas cancer has the lowest correlation coefficient at r=0.3. 
+Although the high correlation with hay fever was a surprise, it can be explained by how common the condition is. As there is a strong correlation between poor air quality and ICU/HDU, this indicates that future intervention with COVID should involve consideration to areas with poorer air quality.
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+## Getting Started
+1. Clone this repo (for help see this [tutorial](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)).
+2. Raw data is being kept [here](https://github.com/fufu78/CFG-Project/tree/data-analysis-CSV-files) within this repo. 
+3. Data processing/transformation scripts are being kept [here](https://github.com/fufu78/CFG-Project/tree/data-analysis-results)
 
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+|Branch    |  Instructions  | 
+|---------|-----------------|
+|data-analysis-CSV | There are five CSV files that store project data: <ul><li>Air_quality_data (average AQI data per city)</li><li> Covid_deaths_2023 (total number of covid deaths per week per region)</li><li>Covid_icu_2023 (number of ICU/HDU admissions per 100,000 people per region)</li><li>AQI_categories (classifications of air quality index)</li><li>all_COVID_data (health factors, general health ratings)</li>|
+| data-analysis-results | <li>For analysis on air quality and covid-related deaths/ICU admissions, please use the notebook air_quality_&_covid-rebecca.ipynb that uses the CSV files Covid_deaths_2023, Covid_icu_23 and Air_quality_data.</li>
 
 ## Credits
-- Emer Buggy https://github.com/fufu78
-- Sabina Wellington https://github.com/sabs-codes
-- Punam Rattu https://github.com/punamrattu
-- Maariya Rachid Daud https://github.com/maariya-daud
-- Rebecca W https://github.com/weebesom
-- Emma Horton https://github.com/emma773
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-![badmath](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![badmath](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+|Name     |  GitHub   | 
+|---------|-----------------|
+|Emer Buggy| https://github.com/fufu78 |
+|Maariya Rachid Daud| https://github.com/maariya-daud |
+|Punam Rattu|https://github.com/punamrattu |
+|Sabina Wellington| https://github.com/sabs-codes|
+|Rebecca W|https://github.com/weebesom |
+|Emma Horton|https://github.com/emma773 |
