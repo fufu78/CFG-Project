@@ -46,7 +46,7 @@ Although the high correlation with hay fever was a surprise, it can be explained
 |Name     |  GitHub   | 
 |---------|-----------------|
 |Emer Buggy| https://github.com/fufu78 |
-|Emma Horton|https://github.com/emma773 |
+|Emma Horton|https://github.com/emma-horton |
 |Maariya Rachid Daud| https://github.com/maariya-daud |
 |Punam Rattu|https://github.com/punamrattu |
 |Rebecca W|https://github.com/weebesom |
